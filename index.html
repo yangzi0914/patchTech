@@ -201,13 +201,23 @@
                 scrollOverflow: true,
                 afterLoad: function (anchorLink) {
                     var loadedSection = this;
-                    console.log(anchorLink)
                     if (anchorLink == 'home' || anchorLink == 'about') {
                         $(".header").removeClass("black");
                         $('#fp-nav').removeClass("black");
                     } else {
                         $(".header").addClass("black");
                         $("#fp-nav").addClass("black");
+                    }
+
+                    if (anchorLink == 'detail') {
+                        $(".header").addClass("mask");
+                        $("#menu").addClass("mask");
+                    }
+                },
+                onLeave: function (index) {
+                    if (index == '4') {
+                        $(".header").removeClass("mask");
+                        $("#menu").removeClass("mask");
                     }
                 }
             })

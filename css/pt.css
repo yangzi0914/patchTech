@@ -304,87 +304,6 @@ a {
     display: inline-block;
 }
 
-@media screen and (max-width: 650px){
-    /* 服务 */
-    #section1 {
-        background-image: url("../images/bg_service_h5.png");
-    }
-
-    #section1 .tit {
-        height: 40px;
-        width: 180px;
-        line-height: 40px;
-        font-size: 16px;
-        margin-top: 60px;
-    }
-
-    #section1 .serviceName {
-        margin: 12px 5%;
-        background-size: 14px 15px;
-        text-indent: 20px;
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    #section1 .serviceList {
-        padding: 0;
-    }
-    
-    #section1 .serviceList li {
-        width: 47%;
-        height: 106px;
-        margin: 0 0 10px 0;
-    }
-
-    #section1 .serviceList li:nth-of-type(2n) {
-        float: right;
-    }
-
-    #section1 .serviceList li:nth-of-type(5) {
-        width: 100%;
-        margin-bottom: 0;
-        background-image: url('../images/service_bg5_h5.png') !important;
-    }
-
-    #section1 .serviceList:nth-of-type(2) li {
-        margin-bottom: 0;
-    }
-
-    #section1 .serviceList li .icon {
-        height: 22px;
-    }
-    
-    #section1 .serviceList li .serviceBg {
-        padding-top: 15px;
-    }
-
-    #section1 .serviceList li .line {
-        width: 14px;
-        margin: 9px auto;
-    }
-    
-    #section1 .serviceList li .text {
-        height: 17px;
-        font-size: 12px;
-        line-height: 17px;
-    }
-    
-    #section1 .serviceList li .goDetail {
-        font-size: 10px;
-        line-height: 14px;
-        margin-top: 5px;
-        display: inline-block;
-        opacity: 0.6;
-    }
-
-    #section1 .serviceList li:hover .serviceBg {
-        background-color: transparent;
-    }
-}
-
-
-
-
 /* 关于 */
 #section2 {
     background-image: url("../images/bg_about.png");
@@ -486,6 +405,10 @@ a {
         display: none !important;
     }
 
+    .mask {
+        background: rgba(255, 255, 255, .9)
+    }
+
     /* 头部 */
     .header {
         top: 7px;
@@ -526,6 +449,7 @@ a {
     #section0 p {
         font-size: 22px;
         margin-top: 18px;
+        margin-bottom: 20vh;
     }
 
     #section0 .icon_next,
@@ -536,10 +460,108 @@ a {
         background-size: cover;
     }
 
+    /* 服务 */
+    #section1 {
+        background-image: url("../images/bg_service_h5.png");
+    }
+
+    #section1 .tit {
+        height: 40px;
+        width: 180px;
+        line-height: 40px;
+        font-size: 16px;
+        margin-top: 60px;
+    }
+
+    #section1 .serviceName {
+        margin: 12px 5%;
+        background-size: 14px 15px;
+        text-indent: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #section1 .serviceList {
+        padding: 0;
+    }
+    
+    #section1 .serviceList li {
+        width: 48%;
+        height: 100px;
+        margin: 0 0 10px 0;
+    }
+
+    #section1 .serviceList li:nth-of-type(2n) {
+        float: right;
+    }
+
+    #section1 .serviceList li:nth-of-type(5) {
+        width: 100%;
+        margin-bottom: 0;
+        background-image: url('../images/service_bg5_h5.png') !important;
+    }
+
+    #section1 .serviceList:nth-of-type(2) li {
+        margin-bottom: 0;
+    }
+
+    #section1 .serviceList li .icon {
+        height: 22px;
+    }
+    
+    #section1 .serviceList li .serviceBg {
+        padding-top: 12px;
+    }
+
+    #section1 .serviceList li .line {
+        width: 14px;
+        margin: 8px auto;
+    }
+    
+    #section1 .serviceList li .text {
+        height: 17px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+    
+    #section1 .serviceList li .goDetail {
+        font-size: 10px;
+        line-height: 14px;
+        margin-top: 5px;
+        display: inline-block;
+        opacity: 0.6;
+    }
+
+    #section1 .serviceList li:hover .serviceBg {
+        background-color: transparent;
+    }
+
+    /* 关于 */
+    #section2 {
+        background-image: url("../images/bg_about_h5.png");
+    }
+
+    #section2 .tit {
+        height: 44px;
+        width: 210px;
+        line-height: 44px;
+        font-size: 18px;
+    }
+
+    #section2 .aboutCon {
+        margin: 33px 5% 0;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    #section2 .aboutCon p {
+        margin-bottom: 15px;
+    }
+
     /* 服务详情 */
     #section3 .detail {
         height: auto;
-        padding-top: 15%;
+        padding-top: 23%;
     }
 
     #section3 .banner {
@@ -593,28 +615,6 @@ a {
         opacity: 0.6;
     }
     
-    /* 关于 */
-    #section2 {
-        background-image: url("../images/bg_about_h5.png");
-    }
-
-    #section2 .tit {
-        height: 44px;
-        width: 210px;
-        line-height: 44px;
-        font-size: 18px;
-    }
-
-    #section2 .aboutCon {
-        margin: 33px 5% 0;
-        font-size: 13px;
-        line-height: 18px;
-    }
-
-    #section2 .aboutCon p {
-        margin-bottom: 15px;
-    }
-
     /* 联系我们 */
     #section4 {
         background-image: url("../images/bg_service_h5.png");
@@ -647,9 +647,44 @@ a {
 }
 
 @media screen and (max-width: 374px){
+    /* 服务 */
+    #section1 .tit {
+        height: 30px;
+        width: 162px;
+        line-height: 30px;
+        font-size: 15px;
+        /* margin-top: 60px; */
+    }
+
+    #section1 .serviceName {
+        margin: 9px 5%;
+        background-size: 12px 14px;
+        text-indent: 17px;
+        font-size: 13px;
+        line-height: 17px;
+    }
+    
+    #section1 .serviceList li {
+        width: 49%;
+        height: 92px;
+        margin: 0 0 8px 0;
+    }
+
+    #section1 .serviceList li .icon {
+        height: 20px;
+    }
+    
+    #section1 .serviceList li .serviceBg {
+        padding-top: 10px;
+    }
+
+    #section1 .serviceList li .line {
+        margin: 6px auto;
+    }
+
     /* 服务详情 */
     #section3 .detail {
-        padding-top: 21%;
+        padding-top: 25%;
     }
 
     #section3 .tit {
