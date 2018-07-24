@@ -343,6 +343,7 @@ a {
     #section1 .serviceList li:nth-of-type(5) {
         width: 100%;
         margin-bottom: 0;
+        background-image: url('../images/service_bg5_h5.png') !important;
     }
 
     #section1 .serviceList:nth-of-type(2) li {
