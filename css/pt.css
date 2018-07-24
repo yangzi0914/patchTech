@@ -380,10 +380,6 @@ a {
     #section1 .serviceList li:hover .serviceBg {
         background-color: transparent;
     }
-
-    .no_h5 {
-        display: none;
-    }
 }
 
 
@@ -479,9 +475,17 @@ a {
     width: 160px;
 }
 
-
+@media screen and (min-width: 651px){
+    .onlyH5 {
+        display: none !important;
+    }
+}
 /* 适配手机 */
 @media screen and (max-width: 650px){
+    .onlyPC {
+        display: none !important;
+    }
+
     /* 头部 */
     .header {
         top: 7px;
@@ -530,6 +534,63 @@ a {
         height: 28px;
         background-image: url("../images/icon_next.png");
         background-size: cover;
+    }
+
+    /* 服务详情 */
+    #section3 .detail {
+        height: auto;
+        padding-top: 15%;
+    }
+
+    #section3 .banner {
+        height: auto;
+        padding-top: 0;
+        background: none;
+    }
+
+    #section3 .tit {
+        height: 40px;
+        width: 180px;
+        line-height: 40px;
+        font-size: 16px;
+        background-image: url('../images/icon_tit.png');
+        color: #1B1B33;
+        transform: translateY(0);
+    }
+
+    #section3 .detailList li {
+        width: 48%;
+        height: 245px;
+        padding: 10px 14px 0;
+        margin-top: 10px;
+        box-shadow: 0 2px 12px 0 rgba(244,244,244,0.50);
+        border-radius: 2px;
+    }
+
+    #section3 .detailList li:nth-of-type(2n) {
+        float: right;
+    }
+    
+    #section3 .detailList li .icon {
+        height: 27px;
+    }
+    
+    #section3 .detailList li .text {
+        font-size: 15px;
+        line-height: 21px;
+        margin: 10px auto;
+    }
+    
+    #section3 .detailList li .line {
+        display: none;
+    }
+    
+    #section3 .detailList li .content span {
+        display: inline-block;
+        min-width: 50%;
+        padding: 0;
+        font-size: 13px;
+        opacity: 0.6;
     }
     
     /* 关于 */
@@ -583,5 +644,39 @@ a {
         text-align: right;
     }
 
+}
+
+@media screen and (max-width: 374px){
+    /* 服务详情 */
+    #section3 .detail {
+        padding-top: 21%;
+    }
+
+    #section3 .tit {
+        height: 30px;
+        width: 162px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+
+    #section3 .detailList li {
+        height: 220px;
+        padding: 5px 14px 0;
+        margin-top: 8px;
+    }
+
+    #section3 .detailList li .icon {
+        height: 23px;
+    }
+    
+    #section3 .detailList li .text {
+        font-size: 13px;
+        line-height: 17px;
+        margin: 8px auto;
+    }
+
+    #section3 .detailList li .content span {
+        font-size: 12px;
+    }
 }
 
