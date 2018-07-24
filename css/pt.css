@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    height: 0;
+    content: "\0020"
+}
+
+/* 公用 */
+.section{
+    position: relative;
+    background-position: 50% 50%;
+    background-size: cover;
+    text-align:center;
+    color: #1B1B33;
+}
+
+.icon_next {
+    position: absolute;
+    bottom: 50px;
+    transform: translateX(-50%);
+}
+
+.tit {
+    height: 65px;
+    width: 290px;
+    margin: 0 auto;
+    line-height: 65px;
+    font-size: 26px;
+    text-align: right;
+    background: no-repeat 0 50%;
+    background-size: contain;
+}
+
+/* 导航 */
+.header {
+    position: fixed;
+    top: 3%;
+    width: 100%;
+    height: 40px;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    line-height: 32px;
+    z-index: 99999;
+}
+
+.header .logo {
+    float: left;
+    margin-left: 5%;
+    width: 170px;
+    height: 40px;
+    background: url("../images/logo.png") no-repeat 0 50%;
+    background-size: auto 32px;
+    transition: all .8s ease;
+}
+
+.header #menu {
+    float: right;
+    margin-right: 5%;
+    padding-right: 50px;
+}
+
+.header #menu li {
+    float: left;
+    margin-right: 50px;
+}
+
+.header #menu li a {
+    color: #fff;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: all .8s ease;
+}
+
+.header #menu li a:hover,
+.header #menu li.active a {
+    color: #04DF8B;
+    border-bottom: 2px solid #04DF8B;
+}
+
+.header .language {
+    position: absolute;
+    right: 5%;
+}
+
+.header .language a {
+    color: #fff;
+    transition: all .8s ease;
+}
+#fp-nav ul li {
+    height: 20px;
+}
+
+#fp-nav ul li a span {
+    width: 8px;
+    height: 8px;
+    background: #04DF8B;
+}
+
+#fp-nav ul li a.active span {
+    width: 8px;
+    height: 26px;
+    border-radius: 4px;
+    margin: -12px 0 0 -2px;
+}
+
+/* 黑色导航 */
+.header.black .logo {
+    background-image: url("../images/logo_black.png");
+}
+
+.header.black #menu li a,
+.header.black .language a {
+    color: #1B1B33;
+    opacity: 0.6;
+}
+
+.header.black #menu li a:hover,
+.header.black #menu li.active a {
+    opacity: 1;
+}
+
+/* 首页 */
+#section0 {
+    background-image: url("../images/bg_home.png");
+}
+
+#section0 h2 img {
+    height: 79px;
+}
+
+#section0 p {
+    font-size: 50px;
+    color: #04DF8B;
+    margin-top: 84px;
+}
+
+#section0 .icon_next {
+    width: 26px;
+    height: 35.9px;
+    background: url("../images/icon_mouse.png") no-repeat 50% 50%;
+}
+
+/* 服务 */
+#section1 {
+    background-image: url("../images/bg_service.png");
+}
+
+#section1 .tit {
+    background-image: url('../images/icon_tit.png');
+    margin-top: 32px;
+}
+
+#section1 .serviceName {
+    margin: 32px 5% 15px;
+    background: url('../images/icon_tit_h4.png') no-repeat 0 50%;
+    text-align: left;
+    text-indent: 25px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#section1 .serviceList {
+    margin: 0 5%;
+    padding: 0 100px;
+}
+
+#section1 .serviceList li {
+    float: left;
+    width: 16%;
+    height: 198px;
+    margin: 0 2%;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+    border-radius: 2px;
+}
+
+#section1 .serviceList li .icon {
+    height: 37px;
+}
+
+#section1 .serviceList li .serviceBg {
+    display: block;
+    height: 100%;
+    padding-top: 55px;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+}
+
+#section1 .serviceList li .line {
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: #fff;
+    margin: 18px auto 14px;
+}
+
+#section1 .serviceList li .text {
+    height: 46px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #fff;
+}
+
+#section1 .serviceList li .goDetail {
+    font-size: 13px;
+    color: #fff;
+    line-height: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid #fff;
+    display: none;
+}
+
+#section1 .serviceList li:hover {
+    box-shadow: 4px 2px 21px #ababab;
+    transform: scale(1.1);
+    -ms-transform:scale(1.1);     /* IE 9 */
+    -moz-transform:scale(1.1);     /* Firefox */
+    -webkit-transform:scale(1.1); /* Safari 和 Chrome */
+    -o-transform:scale(1.1);
+}
+
+#section1 .serviceList li:hover .serviceBg {
+    padding-top: 26px;
+    background-color: rgba(4, 223, 139, 0.7);
+}
+
+#section1 .serviceList li:hover .goDetail {
+    display: inline-block;
+}
+
+@media screen and (max-width: 650px){
+    /* 服务 */
+    #section1 {
+        background-image: url("../images/bg_service_h5.png");
+    }
+
+    #section1 .tit {
+        height: 40px;
+        width: 180px;
+        line-height: 40px;
+        font-size: 16px;
+        margin-top: 60px;
+    }
+
+    #section1 .serviceName {
+        margin: 12px 5%;
+        background-size: 14px 15px;
+        text-indent: 20px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #section1 .serviceList {
+        padding: 0;
+    }
+    
+    #section1 .serviceList li {
+        width: 47%;
+        height: 106px;
+        margin: 0 0 10px 0;
+    }
+
+    #section1 .serviceList li:nth-of-type(2n) {
+        float: right;
+    }
+
+    #section1 .serviceList li:nth-of-type(5) {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #section1 .serviceList:nth-of-type(2) li {
+        margin-bottom: 0;
+    }
+
+    #section1 .serviceList li .icon {
+        height: 22px;
+    }
+    
+    #section1 .serviceList li .serviceBg {
+        padding-top: 15px;
+    }
+
+    #section1 .serviceList li .line {
+        width: 14px;
+        margin: 9px auto;
+    }
+    
+    #section1 .serviceList li .text {
+        height: 17px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+    
+    #section1 .serviceList li .goDetail {
+        font-size: 10px;
+        line-height: 14px;
+        margin-top: 5px;
+        display: inline-block;
+        opacity: 0.6;
+    }
+
+    #section1 .serviceList li:hover .serviceBg {
+        background-color: transparent;
+    }
+
+    .no_h5 {
+        display: none;
+    }
+}
+
+
+
+
+/* 关于 */
+#section2 {
+    background-image: url("../images/bg_about.png");
+    color: #fff;
+}
+
+#section2 .tit {
+    background-image: url('../images/icon_tit_green.png');
+}
+
+#section2 .aboutCon {
+    margin: 78px 15% 0;
+    /* text-align: left; */
+    text-align: justify;
+    font-size: 15px;
+    line-height: 21px;
+    /* text-indent: 2em; */
+}
+
+#section2 .aboutCon p {
+    margin-bottom: 40px;
+}
+
+/* 服务详情 */
+#section3 .detail {
+    height: 100%;
+    padding-top: 5%;
+}
+
+#section3 .banner {
+    height: 16vh;
+    max-height: 206px;
+    padding-top: 8vh;
+    background: url('../images/detail_banner.png') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#section3 .tit {
+    width: 245px;
+    font-size: 20px;
+    background-image: url('../images/icon_tit_green.png');
+    color: #fff;
+    transform: translateY(-50%);
+}
+
+#section3 .detailList {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+#section3 .detailList li {
+    float: left;
+    width: 33.3%;
+    padding: 0 1%;
+    margin-top: 6vh;
+}
+
+#section3 .detailList li .icon {
+    height: 42px;
+}
+
+#section3 .detailList li .text {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 30px auto 12px;
+}
+
+#section3 .detailList li .line {
+    display: inline-block;
+    width: 34px;
+    height: 2px;
+    background: #04DF8B;
+    margin-bottom: 15px;
+}
+
+#section3 .detailList li .content span {
+    display: inline-block;
+    min-width: 25%;
+    padding: 0 1em;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* 联系我们 */
+#section4 .tit {
+    background-image: url('../images/icon_tit.png');
+    width: 160px;
+}
+
+
+/* 适配手机 */
+@media screen and (max-width: 650px){
+    /* 头部 */
+    .header {
+        top: 7px;
+        font-size: 15px;
+    }
+
+    .header .logo {
+        background-size: auto 27px;
+        width: 140px;
+    }
+
+    .header #menu {
+        width: 90%;
+        margin: 15px 5% 0;
+        padding: 0;
+    }
+
+    .header #menu li {
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        text-align:center;
+    }
+
+    .header.black #menu{
+        margin-top: 0;
+    }
+
+    /* 首页 */
+    #section0 {
+        background-image: url("../images/bg_home_h5.png");
+    }
+    
+    #section0 h2 img {
+        height: 45px;
+    }
+    
+    #section0 p {
+        font-size: 22px;
+        margin-top: 18px;
+    }
+
+    #section0 .icon_next,
+    #section2 .icon_next {
+        width: 22px;
+        height: 28px;
+        background-image: url("../images/icon_next.png");
+        background-size: cover;
+    }
+    
+    /* 关于 */
+    #section2 {
+        background-image: url("../images/bg_about_h5.png");
+    }
+
+    #section2 .tit {
+        height: 44px;
+        width: 210px;
+        line-height: 44px;
+        font-size: 18px;
+    }
+
+    #section2 .aboutCon {
+        margin: 33px 5% 0;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    #section2 .aboutCon p {
+        margin-bottom: 15px;
+    }
+
+    /* 联系我们 */
+    #section4 .tit {
+        height: 40px;
+        width: 110px;
+        line-height: 40px;
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    #section4 .logo img {
+        height: 26px;
+    }
+
+    #section4 .wxQR img {
+        height: 203px;
+    }
+
+    #section4 .text {
+        margin: 0 auto;
+        background: url('../images/icon_wx.png') no-repeat 0 50%;
+        background-size: contain;
+        width: 180px;
+        text-align: right;
+    }
+
+}
+
+
+
