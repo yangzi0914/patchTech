@@ -104,6 +104,8 @@ a {
     color: #fff;
     transition: all .8s ease;
 }
+
+/* 右侧导航点 */
 #fp-nav ul li {
     height: 20px;
 }
@@ -112,13 +114,14 @@ a {
     width: 8px;
     height: 8px;
     background: #04DF8B;
+    transition: all .8s ease;
 }
 
 #fp-nav ul li a.active span {
     width: 8px;
-    height: 26px;
+    height: 30px;
     border-radius: 4px;
-    margin: -12px 0 0 -2px;
+    margin: -15px 0 0 -2px;
 }
 
 /* 黑色导航 */
@@ -135,6 +138,10 @@ a {
 .header.black #menu li a:hover,
 .header.black #menu li.active a {
     opacity: 1;
+}
+
+#fp-nav.black ul li a span {
+    background: #1B1B33;
 }
 
 /* 首页 */

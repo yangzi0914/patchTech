@@ -202,8 +202,10 @@
                 console.log(destination.anchor)
                 if (destination.anchor == 'home' || destination.anchor == 'about') {
                     $(".header").removeClass("black");
+                    $('#fp-nav').removeClass("black");
                 } else {
                     $(".header").addClass("black");
+                    $("#fp-nav").addClass("black");
                 }
             }
         });
