@@ -717,10 +717,16 @@ a {
     }
 }
 
-@media screen and (min-height: 700px){
+@media screen and (max-width: 650px) and (min-height: 700px){
     /* 服务 */
     #section1 .tit {
         margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 650px) and (max-height: 700px) {
+    #section1 .tit {
+        margin-top: 60px;
     }
 }
 
@@ -735,9 +741,5 @@ a {
         transform: scale(0.8);
         margin-top: -10vh;
     }
-
-     /* #section1 .tit {
-        margin-top: 88px;
-    } */
 }
 
