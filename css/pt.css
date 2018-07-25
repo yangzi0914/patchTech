@@ -730,7 +730,7 @@ a {
     }
 }
 
-@media screen and (max-height: 600px){
+@media screen and (max-width: 650px) and (max-height: 600px){
     /* 服务 */
     #section1 .serviceCon {
         height: 74vh;
