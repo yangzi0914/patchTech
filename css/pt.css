@@ -333,7 +333,7 @@ a {
 /* 服务详情 */
 #section3 .detail {
     height: 100%;
-    padding-top: 5%;
+    padding-top: 10vh;
 }
 
 #section3 .banner {
