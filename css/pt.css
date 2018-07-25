@@ -45,49 +45,49 @@ a {
 
 @-webkit-keyframes sway {
     0% {
-        bottom: 30px;
+        bottom: 40px;
     }
     50% {
-        bottom: 35px;
+        bottom: 45px;
     }
     100% {
-        bottom: 30px;
+        bottom: 40px;
     }
 }
 
 @-moz-keyframes sway {
     0% {
-        bottom: 30px;
+        bottom: 40px;
     }
     50% {
-        bottom: 35px;
+        bottom: 45px;
     }
     100% {
-        bottom: 30px;
+        bottom: 40px;
     }
 }
 
 @-o-keyframes sway {
     0% {
-        bottom: 30px;
+        bottom: 40px;
     }
     50% {
-        bottom: 35px;
+        bottom: 45px;
     }
     100% {
-        bottom: 30px;
+        bottom: 40px;
     }
 }
 
 @keyframes sway {
     0% {
-        bottom: 30px;
+        bottom: 40px;
     }
     50% {
-        bottom: 35px;
+        bottom: 45px;
     }
     100% {
-        bottom: 30px;
+        bottom: 40px;
     }
 }
 
@@ -651,12 +651,12 @@ a {
 
 @media screen and (max-width: 374px){
     /* 服务 */
-    #section1 .tit {
+    #section1 .tit,
+    #section3 .tit,{
         height: 30px;
         width: 162px;
         line-height: 30px;
         font-size: 15px;
-        /* margin-top: 60px; */
     }
 
     #section1 .serviceName {
@@ -685,16 +685,15 @@ a {
         margin: 6px auto;
     }
 
+    /* 关于 */
+    #section2 .aboutCon {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
     /* 服务详情 */
     #section3 .detail {
         padding-top: 25%;
-    }
-
-    #section3 .tit {
-        height: 30px;
-        width: 162px;
-        line-height: 30px;
-        font-size: 15px;
     }
 
     #section3 .detailList li {
