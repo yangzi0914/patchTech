@@ -717,40 +717,27 @@ a {
     }
 }
 
+@media screen and (min-height: 700px){
+    /* 服务 */
+    #section1 .tit {
+        margin-top: 0;
+    }
+}
+
 @media screen and (max-height: 600px){
     /* 服务 */
-    #section1 .tit,
-    #section3 .tit,{
-        height: 30px;
-        width: 162px;
-        line-height: 30px;
-        font-size: 15px;
+    #section1 .serviceCon {
+        height: 74vh;
+        overflow: hidden;
     }
 
-    #section1 .serviceName {
-        margin: 9px 5%;
-        background-size: 12px 14px;
-        text-indent: 17px;
-        font-size: 13px;
-        line-height: 17px;
-    }
-    
-    #section1 .serviceList li {
-        width: 49%;
-        height: 92px;
-        margin: 0 0 8px 0;
+    #section1 .serviceCon > div {
+        transform: scale(0.8);
+        margin-top: -10vh;
     }
 
-    #section1 .serviceList li .icon {
-        height: 20px;
-    }
-    
-    #section1 .serviceList li .serviceBg {
-        padding-top: 10px;
-    }
-
-    #section1 .serviceList li .line {
-        margin: 6px auto;
-    }
+     /* #section1 .tit {
+        margin-top: 88px;
+    } */
 }
 
