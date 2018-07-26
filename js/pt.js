@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    alert($('#section1').height());
+    // alert($('#section1').height());
     $('#fullpage').fullpage({
         menu: '#menu',
         anchors: ['home', 'service', 'about', 'detail', 'contactUs'],
@@ -20,13 +20,13 @@ $(document).ready(function () {
                 $("#fp-nav").addClass("black");
             }
 
-            if (anchorLink == 'detail') {
+            if (anchorLink == 'service' && $("#section1").find('.fp-scroller').length || anchorLink == 'detail') {
                 $(".header").addClass("mask");
                 $("#menu").addClass("mask");
             }
         },
         onLeave: function (index) {
-            if (index == '4') {
+            if (index == '2' || index == '4') {
                 $(".header").removeClass("mask");
                 $("#menu").removeClass("mask");
             }
