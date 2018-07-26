@@ -195,41 +195,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
     <script src="js/fullpage.js" type="text/javascript"></script>
     <script src="js/pt.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            alert($('#section1').height());
-            $('#fullpage').fullpage({
-                menu: '#menu',
-                anchors: ['home', 'service', 'about', 'detail', 'contactUs'],
-                navigation: true,
-                navigationPosition: 'right',
-                scrollOverflow: true,
-                afterLoad: function (anchorLink) {
-                    var loadedSection = this;
-                    if (anchorLink == 'home' || anchorLink == 'about') {
-                        $(".header").removeClass("black");
-                        $('#fp-nav').removeClass("black");
-                    } else {
-                        $(".header").addClass("black");
-                        $("#fp-nav").addClass("black");
-                    }
 
-                    if (anchorLink == 'detail') {
-                        $(".header").addClass("mask");
-                        $("#menu").addClass("mask");
-                    }
-                },
-                onLeave: function (index) {
-                    if (index == '4') {
-                        $(".header").removeClass("mask");
-                        $("#menu").removeClass("mask");
-                    }
-                }
-            })
-        })
-    </script>
     <script src="//cdn.jsdelivr.net/npm/eruda"></script>
-<script>eruda.init();</script>
+    <script>eruda.init();</script>
 </body>
 
 </html>
