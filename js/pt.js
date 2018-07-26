@@ -8,9 +8,13 @@ $(document).ready(function () {
         scrollOverflow: true,
         afterLoad: function (anchorLink) {
             var loadedSection = this;
-            if (anchorLink == 'home' || anchorLink == 'about') {
-                $(".header").removeClass("black");
+            if (anchorLink == 'home' || anchorLink == 'service' || anchorLink == 'about') {
                 $('#fp-nav').removeClass("black");
+                if (anchorLink == 'service') {
+                    $(".header").addClass("black");
+                } else {
+                    $(".header").removeClass("black");
+                }
             } else {
                 $(".header").addClass("black");
                 $("#fp-nav").addClass("black");
